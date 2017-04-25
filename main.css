@@ -1,0 +1,44 @@
+.item {
+    display: none;
+}
+
+.item.active {
+    display: block;
+}
+
+.btn_active {
+    color: blue;
+}
+
+input[type=checkbox] {
+    display: none;
+}
+
+input[type=checkbox]+label span {
+    text-align: center;
+    padding: 0.25em 1em;
+}
+
+input[type=checkbox]+label span.off {
+    background: #c00;
+    color: #fff;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+input[type=checkbox]+label span.on {
+    background: #999;
+    color: #666;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+input[type=checkbox]:checked+label span.off {
+    background: #999;
+    color: #666;
+}
+
+input[type=checkbox]:checked+label span.on {
+    background: #0c0;
+    color: #fff;
+}
