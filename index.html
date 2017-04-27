@@ -7,10 +7,11 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <!-- first step to a responsive site -->
-        <title>HTML Skeleton</title>
+        <title>The Life of Prince - In Hairstyles</title>
 
         <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
-
+        <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
         <!-- Your styles should be called here -->
         <link href="main.css" rel="stylesheet">
 
@@ -26,99 +27,302 @@
         <!-- YOUR CONTENT GOES HERE -->
 
 
+        <h2> The Life of Prince <br> - In Hairstyles </h2>
+        <p class="byline"> By Sarah Stein Kerr </p>
 
+        <img src="images/prince.jpg" class="lead">
 
         <h3> Decade </h3>
-        <button class="filter" id="1970s" data-filter="1970s">1970s</button>
-        <button class="filter" data-filter="1980s">1980s</button>
-        <button class="filter" data-filter="1990s">1990s</button>
-        <button class="filter" data-filter="2000s">2000s</button>
-        <button class="filter" data-filter="2010s">2010s</button>
+        <div class="section">
+            <div class="toggle">
+                <div> <label class="switch filter">
+  <input type="checkbox" data-filter="1970s">
+  <div class="slider"></div>
+</label>
+
+                    <p>1970s</p>
+                </div>
+            </div>
+
+            <div class="toggle">
+                <div> <label class="switch filter">
+  <input type="checkbox" data-filter="1980s">
+  <div class="slider"></div>
+</label>
+
+                    <p>1980s</p>
+                </div>
+            </div>
+
+
+            <div class="toggle">
+                <div> <label class="switch filter">
+  <input type="checkbox" data-filter="1990s">
+  <div class="slider"></div>
+  </label>
+
+                    <p>1990s</p>
+                </div>
+            </div>
+
+            <div class="toggle">
+                <div> <label class="switch filter">
+  <input type="checkbox" data-filter="2000s">
+  <div class="slider"></div>
+  </label>
+
+                    <p>2000s</p>
+                </div>
+            </div>
+
+            <div class="toggle">
+                <div> <label class="switch filter">
+  <input type="checkbox" data-filter="2010s">
+  <div class="slider"></div>
+  </label>
+
+                    <p>2010s</p>
+                </div>
+            </div>
+        </div>
+
 
         <h3> Length </h3>
-        <button class="filter" data-filter="short">Short</button>
-        <button class="filter" data-filter="mediumlength">Medium-length</button>
-        <button class="filter" data-filter="long">Long</button>
+        <div class="section">
+            <div class="toggle">
+                <div> <label class="switch filter">
+  <input type="checkbox" data-filter="short">
+  <div class="slider"></div>
+</label>
 
-        <h3> Texture </h3>
-        <button class="filter" data-filter="natural">Natural</button>
-        <button class="filter" data-filter="straight">Straight</button>
-        <button class="filter" data-filter="curly">Curly</button>
+                    <p>Short</p>
+                </div>
+            </div>
 
-        <h3> Style </h3>
-        <button class="filter" data-filter="volume">Volume</button>
-        <button class="filter" data-filter="flowing">Flowing</button>
-        <button class="filter" data-filter="waves">Waves</button>
-        <button class="filter" data-filter="ponytails">Ponytails</button>
-        <button class="filter" data-filter="asymmetrical">A-symmetrical</button>
+            <div class="toggle">
+                <div> <label class="switch filter">
+  <input type="checkbox" data-filter="mediumlength">
+  <div class="slider"></div>
+</label>
 
+                    <p>Medium</p>
+                </div>
+            </div>
 
-        <h3> Mustache </h3>
-        <button class="filter" data-filter="fullstache">Full Mustache</button>
-        <button class="filter" data-filter="skinnystache">Skinny Mustache</button>
-        <button class="filter" data-filter="nostache">No Mustache</button>
+            <div class="toggle">
+                <div> <label class="switch filter">
+  <input type="checkbox" data-filter="long">
+  <div class="slider"></div>
+</label>
 
-
-        <h3> All </h3>
-        <button class="filter" data-filter="all">All</button>
-        <button class="filter" data-filter="reset">Reset</button>
-
-
-        <div id="1978" class="1970s long natural fullstache volume item">
-            <img src="images/1978.png">
-            <p>1978</p>
-        </div>
-
-        <div id="1979" class="1970s long straight flowing waves fullstache volume item">
-            <img src="images/1979.png">
-            <p>1979</p>
-        </div>
-
-        <div id="1981" class="1980s short curly fullstache asymmetrical item"><img src="images/1981.png">
-            <p>1981</p>
-        </div>
-
-        <div id="1984" class="1980s mediumlength curly asymmetrical fullstache volume item"><img src="images/1984.png">
-            <p>1984</p>
-        </div>
-
-        <div id="1988" class="1980s mediumlength straight flowing skinnystache volume item"><img src="images/1988.png">
-            <p>1988</p>
-        </div>
-
-        <div id="1992" class="1990s short curly asymmetrical volume skinnystache item"><img src="images/1992.png">
-            <p>1992</p>
-        </div>
-
-        <div id="1995" class="1990s short curly skinnystache item"><img src="images/1995.png">
-            <p>1995</p>
-        </div>
-
-        <div id="1998" class="1990s mediumlength straight ponytails skinnystache item"><img src="images/1998.png">
-            <p>1998</p>
-        </div>
-
-        <div id="2001" class="2000s mediumlength straight skinnystache volume item"><img src="images/2001.png">
-            <p>2001</p>
-        </div>
-
-        <div id="2004" class="2000s short curly fullstache item"><img src="images/2004.png">
-            <p>2004</p>
-        </div>
-
-        <div id="2009" class="2000s short straight volume skinnystache item"><img src="images/2009.png">
-            <p>2009</p>
-        </div>
-
-        <div id="2012" class="2010s short natural volume nostache item"><img src="images/2012.png">
-            <p>2012</p>
-        </div>
-
-        <div id="2015" class="2010s mediumlength skinnystache natural volume item"><img src="images/2015.png">
-            <p>2015</p>
+                    <p>Long</p>
+                </div>
+            </div>
         </div>
 
 
+        <h3> Texture</h3>
+        <div class="section">
+            <div class="toggle">
+                <div> <label class="switch filter">
+  <input type="checkbox" data-filter="natural">
+  <div class="slider"></div>
+</label>
+
+                    <p>Natural</p>
+                </div>
+            </div>
+
+            <div class="toggle">
+                <div> <label class="switch filter">
+      <input type="checkbox" data-filter="straight">
+      <div class="slider"></div>
+      </label>
+
+                    <p>Straight</p>
+                </div>
+            </div>
+
+            <div class="toggle">
+                <div> <label class="switch filter">
+  <input type="checkbox" data-filter="curly">
+  <div class="slider"></div>
+</label>
+
+                    <p>Curly</p>
+                </div>
+            </div>
+
+
+        </div>
+
+
+        <h3> Style</h3>
+        <div class="section">
+            <div class="toggle">
+                <div> <label class="switch filter">
+<input type="checkbox" data-filter="volume">
+<div class="slider"></div>
+</label>
+
+                    <p>Volume</p>
+                </div>
+            </div>
+            <div class="toggle">
+                <div> <label class="switch filter">
+<input type="checkbox" data-filter="flowing">
+<div class="slider"></div>
+</label>
+
+                    <p>Flowing</p>
+                </div>
+            </div>
+            <div class="toggle">
+                <div> <label class="switch filter">
+<input type="checkbox" data-filter="waves">
+<div class="slider"></div>
+</label>
+
+                    <p>Waves</p>
+                </div>
+            </div>
+
+            <div class="toggle">
+                <div> <label class="switch filter">
+<input type="checkbox" data-filter="ponytails">
+<div class="slider"></div>
+</label>
+
+                    <p>Ponytails</p>
+                </div>
+            </div>
+
+            <div class="toggle">
+                <div> <label class="switch filter">
+    <input type="checkbox" data-filter="asymmetrical">
+    <div class="slider"></div>
+    </label>
+
+                    <p class="small">A-Symmetrical</p>
+                </div>
+            </div>
+
+        </div>
+
+        <h3>Mustache</h3>
+        <div class="section">
+            <div class="toggle">
+                <div> <label class="switch filter">
+<input type="checkbox" data-filter="fullstache">
+<div class="slider"></div>
+</label>
+                    <p> Full Mustache </p>
+
+                </div>
+            </div>
+
+            <div class="toggle">
+                <div> <label class="switch filter">
+<input type="checkbox" data-filter="skinnystache">
+<div class="slider"></div>
+</label>
+                    <p>Skinny Mustache </p>
+
+                </div>
+            </div>
+
+            <div class="toggle">
+                <div> <label class="switch filter">
+<input type="checkbox" data-filter="nostache">
+<div class="slider"></div>
+</label>
+                    <p> No Mustache </p>
+
+                </div>
+            </div>
+
+        </div>
+
+        <h3> All/Reset </h3>
+        <div class="section">
+            <div class="toggle">
+                <div> <label class="switch filter">
+<input type="checkbox" data-filter="all">
+<div class="slider"></div>
+</label>
+                    <p> All </p>
+
+                </div>
+            </div>
+
+            <div class="toggle">
+                <div> <label class="switch filter">
+<input type="checkbox" data-filter="reset">
+<div class="slider"></div>
+</label>
+                    <p> Reset</p>
+
+                </div>
+            </div>
+        </div>
+
+
+        <div class="pictures">
+            <div id="1978" class="1970s long natural fullstache volume item">
+                <img src="images/1978.png">
+                <p class="photos">1978</p>
+            </div>
+
+            <div id="1979" class="1970s long straight flowing waves fullstache volume item">
+                <img src="images/1979.png">
+                <p class="photos">1979</p>
+            </div>
+
+            <div id="1981" class="1980s short curly fullstache asymmetrical item"><img src="images/1981.png">
+                <p class="photos">1981</p>
+            </div>
+
+            <div id="1984" class="1980s mediumlength curly asymmetrical fullstache volume item"><img src="images/1984.png">
+                <p class="photos">1984</p>
+            </div>
+
+            <div id="1988" class="1980s mediumlength straight flowing skinnystache volume item"><img src="images/1988.png">
+                <p class="photos">1988</p>
+            </div>
+
+            <div id="1992" class="1990s short curly asymmetrical volume skinnystache item"><img src="images/1992.png">
+                <p class="photos">1992</p>
+            </div>
+
+            <div id="1995" class="1990s short curly skinnystache item"><img src="images/1995.png">
+                <p class="photos">1995</p>
+            </div>
+
+            <div id="1998" class="1990s mediumlength straight ponytails skinnystache item"><img src="images/1998.png">
+                <p class="photos">1998</p>
+            </div>
+
+            <div id="2001" class="2000s mediumlength straight skinnystache volume item"><img src="images/2001.png">
+                <p class="photos">2001</p>
+            </div>
+
+            <div id="2004" class="2000s short curly fullstache item"><img src="images/2004.png">
+                <p class="photos">2004</p>
+            </div>
+
+            <div id="2009" class="2000s short straight volume skinnystache item"><img src="images/2009.png">
+                <p class="photos">2009</p>
+            </div>
+
+            <div id="2012" class="2010s short natural volume nostache item"><img src="images/2012.png">
+                <p class="photos">2012</p>
+            </div>
+
+            <div id="2015" class="2010s mediumlength skinnystache natural volume item"><img src="images/2015.png">
+                <p class="photos">2015</p>
+            </div>
+
+        </div>
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 

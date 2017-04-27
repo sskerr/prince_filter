@@ -1,31 +1,28 @@
 $(document).ready(function () {
 	$(".filter").on("click", function (e) {
-		e.preventDefault();
 
-		var button = $(this);
-		var filter = button.data("filter");
-
-
-		if (filter === "all") {
-			$(".item").addClass("active");
-
-		} else {
-			/*$(".item.active").removeClass("active");*/
-			$(".item" + "." + filter).addClass("active");
-		}
-
-		if (filter === "reset") {
-			$(".item").removeClass("active");
-		}
+		$(".item.active").removeClass("active");
+		$("[type='checkbox']:checked").each(function () {
+			var checkbox = $(this),
+				filter = checkbox.data("filter");
+			$("." + filter).addClass("active");
+		});
 
 	});
 
-	/*function toggle("button") {
-		if
-		$(this).val("click").addClass("btn_active");
+	if (filter === "reset") {
+		$(".item").removeClass("active");
+	} else {
+		$(".item.active").addClass("active");
+		$(".item" + "." + filter).addClass("active");
 	}
 
-	});
-	*/
+	/*if (filter === "all") {
+			$(".item").addClass("active");
+
+		}
+*/
+
+
 
 });
